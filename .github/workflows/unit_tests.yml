@@ -6,7 +6,7 @@ on:
 
 jobs:
   unit-test:
-    name: (py${{ matrix.python-version }})
+    name: (py${{ matrix.python-version }}), os ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
 
