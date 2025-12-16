@@ -8,9 +8,7 @@ import numpy as np
 class quadrature:
     # A class called quadrature
     def __init__(self, N_angles):
-        if (
-            N_angles < 0
-        ):  # if else errorrrrrrrrrrorrrrrrrrrrorrrrrrrrrrorr
+        if N_angles < 0:  # if else errorrrrrrrrrrorrrrrrrrrrorrrrrrrrrrorr
             # rrrrrrrrorrrrrrrrrrorrrrrrrrr
             raise ValueError("degree must be a positive integer")
 
