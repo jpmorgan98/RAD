@@ -34,7 +34,7 @@ def test_maximum():
 
     x = np.random.random(10)
     quad = rad.quadrature(4)
-    psi_m = quad.maximum(x)
+    psi_m = quad.calculate_maximum_flux(x)
     
     max_val = np.sort(x)[-1]
 
