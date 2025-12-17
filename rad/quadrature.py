@@ -33,3 +33,16 @@ class quadrature:
         phi /= np.sum(phi)
 
         return phi
+    
+
+    def calculate_maximum_flux(self, psi):
+        """
+        Calculalaing the maximum flux value 
+
+        :param phi: Vector of flux values
+        :return: maximum flux
+        """
+
+        max_psi = np.max(psi)
+
+        return max_psi
