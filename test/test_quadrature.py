@@ -29,6 +29,18 @@ def test_normalization():
     # using all close cus these are floats!
     assert np.allclose(np.sum(x), 1.0)
 
+def test_maximum():
+    N = 10
+
+    x = np.random.random(10)
+    quad = rad.quadrature(4)
+    psi_m = quad.calculate_maximum_flux(x)
+    
+    max_val = np.sort(x)[-1]
+
+    # using all close cus these are floats!
+    assert np.allclose(psi_m, max_val)
+
 
 if __name__ == "__main__":
     test_normalization()
