@@ -30,7 +30,7 @@ class quadrature:
         :return: normalized vector
         """
 
-        phi /= np.sum(phi)
+        #phi /= np.sum(phi)
 
         return phi
     
